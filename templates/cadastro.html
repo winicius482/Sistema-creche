@@ -243,7 +243,7 @@
 
                         <input
                             type="text"
-                            name="responsavel"
+                            name="nome_responsavel"
                             class="form-control"
                         >
 
@@ -255,7 +255,7 @@
 
                         <input
                             type="text"
-                            name="telefone1"
+                            name="telefone_1"
                             class="form-control"
                         >
 
@@ -267,7 +267,7 @@
 
                         <input
                             type="text"
-                            name="telefone2"
+                            name="telefone_2"
                             class="form-control"
                         >
 
@@ -289,6 +289,46 @@
 
                     </div>
 
+                    <div class="col-md-4">
+
+                        <label>RG do Responsável</label>
+
+                        <input
+                            type="text"
+                            name="responsavel_rg"
+                            class="form-control"
+                        >
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label>CPF do Responsável</label>
+
+                        <input
+                            type="text"
+                            name="responsavel_cpf"
+                            class="form-control"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-md-12">
+
+                        <label>Endereço completo do Responsável</label>
+
+                        <input
+                            type="text"
+                            name="endereco_completo"
+                            class="form-control"
+                        >
+
+                    </div>
+
                 </div>
 
                 <hr class="my-5">
@@ -301,7 +341,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
 
                         <label>Alergias</label>
 
@@ -313,13 +353,64 @@
 
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
 
                         <label>Tipo Sanguíneo</label>
 
+                        <select
+                            name="tipo_sanguineo"
+                            class="form-control"
+                        >
+
+                            <option value="">Selecione...</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label>Certidão de Nascimento</label>
+
                         <input
                             type="text"
-                            name="tipo_sanguineo"
+                            name="certidao_nascimento"
+                            class="form-control"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-md-6">
+
+                        <label>Doenças Crônicas</label>
+
+                        <input
+                            type="text"
+                            name="doencas_cronicas"
+                            class="form-control"
+                        >
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>Foto (URL ou nome do arquivo)</label>
+
+                        <input
+                            type="text"
+                            name="foto"
                             class="form-control"
                         >
 
@@ -335,6 +426,42 @@
                         name="observacoes"
                         class="form-control"
                         rows="5"
+                    ></textarea>
+
+                </div>
+
+                <div class="mt-3">
+
+                    <label>Relatório Descritivo</label>
+
+                    <textarea
+                        name="relatorio_descritivo"
+                        class="form-control"
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+                <div class="mt-3">
+
+                    <label>Necessidades Especiais</label>
+
+                    <textarea
+                        name="necessidades_especiais"
+                        class="form-control"
+                        rows="3"
+                    ></textarea>
+
+                </div>
+
+                <div class="mt-3">
+
+                    <label>Comportamento</label>
+
+                    <textarea
+                        name="comportamento"
+                        class="form-control"
+                        rows="3"
                     ></textarea>
 
                 </div>

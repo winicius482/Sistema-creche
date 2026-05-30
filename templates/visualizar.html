@@ -124,6 +124,51 @@
 
             </div>
 
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">Certidão de Nascimento:</span>
+                        <div class="info-value">{{ aluno.certidao_nascimento if aluno.certidao_nascimento else '-' }}</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">Doenças Crônicas:</span>
+                        <div class="info-value">{{ aluno.doencas_cronicas if aluno.doencas_cronicas else '-' }}</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">Foto:</span>
+                        <div class="info-value">{{ aluno.foto if aluno.foto else '-' }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <span class="info-label">Relatório Descritivo:</span>
+                        <div class="info-value">{{ aluno.relatorio_descritivo if aluno.relatorio_descritivo else '-' }}</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <span class="info-label">Necessidades Especiais:</span>
+                        <div class="info-value">{{ aluno.necessidades_especiais if aluno.necessidades_especiais else '-' }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <span class="info-label">Comportamento:</span>
+                        <div class="info-value">{{ aluno.comportamento if aluno.comportamento else '-' }}</div>
+                    </div>
+                </div>
+            </div>
+
             <!-- ENDEREÇO -->
             <div class="section-title">
                 🏠 ENDEREÇO
@@ -182,14 +227,14 @@
                 <div class="col-md-6">
                     <div class="mb-3">
                         <span class="info-label">Nome do Responsável:</span>
-                        <div class="info-value">{{ aluno.responsavel }}</div>
+                        <div class="info-value">{{ aluno.nome_responsavel if aluno.nome_responsavel else '-' }}</div>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="mb-3">
                         <span class="info-label">Parentesco:</span>
-                        <div class="info-value">{{ aluno.parentesco }}</div>
+                        <div class="info-value">{{ aluno.parentesco if aluno.parentesco else '-' }}</div>
                     </div>
                 </div>
 
@@ -200,14 +245,39 @@
                 <div class="col-md-4">
                     <div class="mb-3">
                         <span class="info-label">Telefone 1:</span>
-                        <div class="info-value">{{ aluno.telefone1 }}</div>
+                        <div class="info-value">{{ aluno.telefone_1 if aluno.telefone_1 else '-' }}</div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="mb-3">
                         <span class="info-label">Telefone 2:</span>
-                        <div class="info-value">{{ aluno.telefone2 if aluno.telefone2 else '-' }}</div>
+                        <div class="info-value">{{ aluno.telefone_2 if aluno.telefone_2 else '-' }}</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">Endereço do Responsável:</span>
+                        <div class="info-value">{{ aluno.endereco_completo if aluno.endereco_completo else '-' }}</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">RG do Responsável:</span>
+                        <div class="info-value">{{ aluno.responsavel_rg if aluno.responsavel_rg else '-' }}</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <span class="info-label">CPF do Responsável:</span>
+                        <div class="info-value">{{ aluno.responsavel_cpf if aluno.responsavel_cpf else '-' }}</div>
                     </div>
                 </div>
 

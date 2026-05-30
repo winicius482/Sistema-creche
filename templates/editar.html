@@ -116,6 +116,78 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Certidão de Nascimento</label>
+                            <input
+                                type="text"
+                                name="certidao_nascimento"
+                                class="form-control"
+                                value="{{ aluno.certidao_nascimento }}"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Foto (URL ou nome do arquivo)</label>
+                            <input
+                                type="text"
+                                name="foto"
+                                class="form-control"
+                                value="{{ aluno.foto }}"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Doenças Crônicas</label>
+                            <input
+                                type="text"
+                                name="doencas_cronicas"
+                                class="form-control"
+                                value="{{ aluno.doencas_cronicas }}"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Relatório Descritivo</label>
+                            <textarea
+                                name="relatorio_descritivo"
+                                class="form-control"
+                                rows="3"
+                            >{{ aluno.relatorio_descritivo }}</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Necessidades Especiais</label>
+                            <textarea
+                                name="necessidades_especiais"
+                                class="form-control"
+                                rows="3"
+                            >{{ aluno.necessidades_especiais }}</textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Comportamento</label>
+                            <textarea
+                                name="comportamento"
+                                class="form-control"
+                                rows="3"
+                            >{{ aluno.comportamento }}</textarea>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -227,6 +299,7 @@
                     </div>
                 </div>
 
+                <input type="hidden" name="responsavel_id" value="{{ aluno.responsavel_id }}">
                 <!-- RESPONSÁVEL -->
                 <div class="section-title">
                     👨‍👩‍👧 RESPONSÁVEL
@@ -238,9 +311,9 @@
                             <label class="form-label">Nome do Responsável *</label>
                             <input
                                 type="text"
-                                name="responsavel"
+                                name="nome_responsavel"
                                 class="form-control"
-                                value="{{ aluno.responsavel }}"
+                                value="{{ aluno.nome_responsavel }}"
                                 required
                             >
                         </div>
@@ -265,9 +338,9 @@
                             <label class="form-label">Telefone 1 *</label>
                             <input
                                 type="text"
-                                name="telefone1"
+                                name="telefone_1"
                                 class="form-control"
-                                value="{{ aluno.telefone1 }}"
+                                value="{{ aluno.telefone_1 }}"
                                 required
                             >
                         </div>
@@ -277,9 +350,45 @@
                             <label class="form-label">Telefone 2</label>
                             <input
                                 type="text"
-                                name="telefone2"
+                                name="telefone_2"
                                 class="form-control"
-                                value="{{ aluno.telefone2 }}"
+                                value="{{ aluno.telefone_2 }}"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">RG do Responsável</label>
+                            <input
+                                type="text"
+                                name="responsavel_rg"
+                                class="form-control"
+                                value="{{ aluno.responsavel_rg }}"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">CPF do Responsável</label>
+                            <input
+                                type="text"
+                                name="responsavel_cpf"
+                                class="form-control"
+                                value="{{ aluno.responsavel_cpf }}"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Endereço do Responsável</label>
+                            <input
+                                type="text"
+                                name="endereco_completo"
+                                class="form-control"
+                                value="{{ aluno.endereco_completo }}"
                             >
                         </div>
                     </div>
